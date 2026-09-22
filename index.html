@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #62c3cc;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+
+    .ventana {
+      width: 100%;
+      max-width: 1000px;
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      margin-top: 20px;
+    }
+
+
+    .barra-superior {
+      background-color: #e0e0e0;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
+    .boton-superior {
+      width: 12px;
+      height: 12px;
+      background-color: #c4c4c4;
+      border-radius: 2px;
+    }
+
+
+    .buscador {
+      flex: 1;
+      height: 20px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      margin: 0 10px;
+    }
+    .encabezado {
+      background-color: #686e77;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      background-color: #c2f3f4;
+    }
+
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
+
+    .boton-menu {
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;
+    }
+
+
+    .boton-menu1{
+        width: 60px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+    .boton-menu2 {
+        width: 50px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;
+     }
+    .boton-menu3{
+        width: 70px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;  
+    }
+    .boton-menu4 {
+        width: 40px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;  
+    }
+    .boton-menu5 {
+        width: 80px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;  
+    }
+    .boton-menu6 {
+        width: 55px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;  
+    }
+    .boton-menu7{
+        width: 65px;
+        height: 12px;
+        background-color: #ffffff;
+        border-radius: 2px;  
+    }
+
+
+    .cuerpo {
+      display: flex;
+      background-color: #f2f2f2;
+      min-height: 800px;
+      padding: 40px 60px 0 60px;
+    }
+    .contenido-principal {
+      flex: 1;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+
+    .noticia-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+
+    .imagen-1 {
+      width: 220px;
+      height: 110px;
+      background-color: #fc9775;
+    }
+
+
+    .titulo-1{
+      height: 12px;
+      background-color: #555b66;
+      width: 100%;
+      border-radius: 2px;
+    }
+
+
+    .texto {
+      height: 12px;
+      background-color: #d8d8d8;
+      width: 100%;
+      border-radius: 2px;
+    }
+
+
+    .texto.corto {
+      width: 45%;
+    }
+
+
+    .noticia-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+
+    .encabezado-2 {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+
+    .imagen-2 {
+      width: 120px;
+      height: 110px;
+      background-color: #88d2d6;
+      flex-shrink: 0;
+    }
+
+
+    .titulos {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+
+    .titulo-2 {
+      height: 12px;
+      background-color: #555b66;
+      width: 45%;
+      border-radius: 2px;
+    }
+
+
+    .subtitulo {
+      height: 10px;
+      background-color: #d8d8d8;
+      width: 25%;
+      border-radius: 2px;
+    }
+    .noticia-3 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+
+    .imagen-3 {
+      width: 220px;
+      height: 110px;
+      background-color: #606670;
+    }
+    .menu-lateral {
+      width: 220px;
+      background-color: #c8c8c8;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+
+    .tarjeta-lateral {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+
+    .titulo-lateral {
+      height: 16px;
+      background-color: #555b66;
+      border-radius: 2px;
+    }
+
+
+    .tarjeta-1 .titulo-lateral {
+    width: 70%;
+    }
+    .tarjeta-2 .titulo-lateral {
+    width: 35%;
+    }
+    .tarjeta-3 .titulo-lateral {
+    width: 55%;
+    }
+    .tarjeta-4 .titulo-lateral {
+    width: 70%;
+    }
+
+
+    .linea {
+      height: 8px;
+      background-color: #ffffff;
+      width: 100%;
+      border-radius: 2px;
+    }
+
+
+    .linea-corta {
+      width: 40%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <section class="ventana">
+    <section class="barra-superior">
+      <section class="boton-superior"></section>
+      <section class="boton-superior"></section>
+      <section class="buscador"></section>
+      <section class="boton-superior"></section>
+      <section class="boton-superior"></section>
+    </section>
+    <header class="encabezado">
+      <section class="logo"></section>
+      <nav class="menu">
+        <section class="boton-menu1"></section>
+        <section class="boton-menu2"></section>
+        <section class="boton-menu3"></section>
+        <section class="boton-menu4"></section>
+        <section class="boton-menu5"></section>
+        <section class="boton-menu6"></section>
+      </nav>
+    </header>
+    <section class="cuerpo">
+      <main class="contenido-principal">
+        <section class="noticia-1">
+          <section class="imagen-1"></section>
+          <section class="titulo-1"></section>
+          <section class="texto"></section>
+          <section class="texto"></section>
+          <section class="texto corto"></section>
+        </section>
+        <section class="noticia-2">
+          <section class="encabezado-2">
+            <section class="imagen-2"></section>
+            <section class="titulos">
+              <section class="titulo-2"></section>
+              <section class="subtitulo"></section>
+            </section>
+          </section>
+          <section class="texto"></section>
+          <section class="texto"></section>
+          <section class="texto"></section>
+        </section>
+        <section class="noticia-3">
+          <section class="imagen-3"></section>
+          <section class="texto"></section>
+          <section class="texto"></section>
+          <section class="texto corto"></section>
+        </section>
+      </main>
+      <section class="menu-lateral">
+        <section class="tarjeta-lateral tarjeta-1">
+          <section class="titulo-lateral"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea-corta"></section>
+        </section>
+        <section class="tarjeta-lateral tarjeta-2">
+          <section class="titulo-lateral"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea-corta"></section>
+        </section>
+        <section class="tarjeta-lateral tarjeta-3">
+          <section class="titulo-lateral"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea-corta"></section>
+        </section>
+        <section class="tarjeta-lateral tarjeta-4">
+          <section class="titulo-lateral"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea"></section>
+          <section class="linea-corta"></section>
+        </section>
+      </section>
+    </section>
+  </section>
+</body>
+</html>
+
