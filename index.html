@@ -11,33 +11,46 @@
       padding: 0;
     }
 
-
     body {
       font-family: Arial, sans-serif;
-      background-color: #62c3cc;
+      background-color: #ffffff;
       display: flex;
-      justify-content: center;
-      padding: 0;
+      flex-direction: column;
+      align-items: center;
     }
-
 
     .ventana {
       width: 100%;
-      max-width: 1000px;
-      background-color: #f2f2f2;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-      margin-top: 20px;
+      max-width: 100%;
+      background-color: #ffffff;
+      margin-top: 0;
+      box-shadow: none;
     }
 
-
     .barra-superior {
-      background-color: #e0e0e0;
-      padding: 10px 15px;
+      background-color: #83cccd;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .barra-superior::before {
+      content: "";
+      display: block;
+      height: 12px;
+      background-color: #fc7254;
+      width: 60px;
+      margin-left: 0;
+    }
+
+    .barra-navegador-contenedor {
+      background-color: #e6e6e6;
+      padding: 6px 15px;
       display: flex;
       align-items: center;
       gap: 8px;
     }
-
 
     .boton-superior {
       width: 12px;
@@ -46,7 +59,6 @@
       border-radius: 2px;
     }
 
-
     .buscador {
       flex: 1;
       height: 20px;
@@ -54,21 +66,20 @@
       border-radius: 3px;
       margin: 0 10px;
     }
+
     .encabezado {
       background-color: #686e77;
-      padding: 20px 40px;
+      padding: 20px 10%;
       display: flex;
       align-items: center;
       gap: 20px;
     }
-
 
     .logo {
       width: 70px;
       height: 70px;
       background-color: #c2f3f4;
     }
-
 
     .menu {
       display: flex;
@@ -77,72 +88,72 @@
       flex: 1;
     }
 
-
     .boton-menu {
       height: 12px;
       background-color: #ffffff;
       border-radius: 2px;
     }
 
-
-    .boton-menu1{
-        width: 60px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;
+    .boton-menu1 { 
+      width: 60px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px; 
     }
-    .boton-menu2 {
-        width: 50px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;
-     }
-    .boton-menu3{
-        width: 70px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;  
+    .boton-menu2 { 
+      width: 50px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px; 
     }
-    .boton-menu4 {
-        width: 40px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;  
+    .boton-menu3 { 
+      width: 70px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;  
     }
-    .boton-menu5 {
-        width: 80px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;  
+    .boton-menu4 { 
+      width: 40px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;  
     }
-    .boton-menu6 {
-        width: 55px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;  
+    .boton-menu5 { 
+      width: 80px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;  
     }
-    .boton-menu7{
-        width: 65px;
-        height: 12px;
-        background-color: #ffffff;
-        border-radius: 2px;  
+    .boton-menu6 { 
+      width: 55px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;  
     }
-
+    .boton-menu7 { 
+      width: 65px;
+      height: 12px;
+      background-color: #ffffff;
+      border-radius: 2px;  
+    }
 
     .cuerpo {
       display: flex;
-      background-color: #f2f2f2;
+      background-color: #ffffff;
       min-height: 800px;
-      padding: 40px 60px 0 60px;
+      padding: 0 10%;
+      justify-content: center;
     }
+    
     .contenido-principal {
       flex: 1;
-      padding-right: 40px;
+      padding: 40px 40px 40px 0;
       display: flex;
       flex-direction: column;
       gap: 40px;
+      background-color: #f2f2f2;
+      padding-left: 40px;
     }
-
 
     .noticia-1 {
       display: flex;
@@ -150,21 +161,18 @@
       gap: 15px;
     }
 
-
     .imagen-1 {
       width: 220px;
       height: 110px;
       background-color: #fc9775;
     }
 
-
-    .titulo-1{
+    .titulo-1 {
       height: 12px;
       background-color: #555b66;
       width: 100%;
       border-radius: 2px;
     }
-
 
     .texto {
       height: 12px;
@@ -173,11 +181,9 @@
       border-radius: 2px;
     }
 
-
     .texto.corto {
       width: 45%;
     }
-
 
     .noticia-2 {
       display: flex;
@@ -185,13 +191,11 @@
       gap: 15px;
     }
 
-
     .encabezado-2 {
       display: flex;
       gap: 20px;
       align-items: flex-start;
     }
-
 
     .imagen-2 {
       width: 120px;
@@ -200,14 +204,12 @@
       flex-shrink: 0;
     }
 
-
     .titulos {
       display: flex;
       flex-direction: column;
       gap: 12px;
       flex: 1;
     }
-
 
     .titulo-2 {
       height: 12px;
@@ -216,34 +218,33 @@
       border-radius: 2px;
     }
 
-
     .subtitulo {
       height: 10px;
       background-color: #d8d8d8;
       width: 25%;
       border-radius: 2px;
     }
+
     .noticia-3 {
       display: flex;
       flex-direction: column;
       gap: 15px;
     }
 
-
     .imagen-3 {
       width: 220px;
       height: 110px;
       background-color: #606670;
     }
+
     .menu-lateral {
       width: 220px;
       background-color: #c8c8c8;
-      padding: 30px 20px;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       gap: 35px;
     }
-
 
     .tarjeta-lateral {
       display: flex;
@@ -251,27 +252,24 @@
       gap: 10px;
     }
 
-
     .titulo-lateral {
       height: 16px;
       background-color: #555b66;
       border-radius: 2px;
     }
 
-
-    .tarjeta-1 .titulo-lateral {
-    width: 70%;
+    .tarjeta-1 .titulo-lateral { 
+      width: 70%; 
     }
-    .tarjeta-2 .titulo-lateral {
-    width: 35%;
+    .tarjeta-2 .titulo-lateral { 
+      width: 35%; 
     }
-    .tarjeta-3 .titulo-lateral {
-    width: 55%;
+    .tarjeta-3 .titulo-lateral { 
+      width: 55%; 
     }
-    .tarjeta-4 .titulo-lateral {
-    width: 70%;
+    .tarjeta-4 .titulo-lateral { 
+      width: 70%; 
     }
-
 
     .linea {
       height: 8px;
@@ -280,22 +278,22 @@
       border-radius: 2px;
     }
 
-
     .linea-corta {
       width: 40%;
     }
-
 
   </style>
 </head>
 <body>
   <section class="ventana">
     <section class="barra-superior">
-      <section class="boton-superior"></section>
-      <section class="boton-superior"></section>
-      <section class="buscador"></section>
-      <section class="boton-superior"></section>
-      <section class="boton-superior"></section>
+      <div class="barra-navegador-contenedor">
+        <section class="boton-superior"></section>
+        <section class="boton-superior"></section>
+        <section class="buscador"></section>
+        <section class="boton-superior"></section>
+        <section class="boton-superior"></section>
+      </div>
     </section>
     <header class="encabezado">
       <section class="logo"></section>
@@ -306,6 +304,7 @@
         <section class="boton-menu4"></section>
         <section class="boton-menu5"></section>
         <section class="boton-menu6"></section>
+        <section class="boton-menu7"></section>
       </nav>
     </header>
     <section class="cuerpo">
@@ -363,7 +362,6 @@
         </section>
         <section class="tarjeta-lateral tarjeta-4">
           <section class="titulo-lateral"></section>
-          <section class="linea"></section>
           <section class="linea"></section>
           <section class="linea"></section>
           <section class="linea"></section>
